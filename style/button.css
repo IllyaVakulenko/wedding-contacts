@@ -1,0 +1,29 @@
+.button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  width: auto;
+  padding: 16px;
+  border-radius: 16px;
+  background-color: var(--primary-2);
+  color: var(--primary-1);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.messenger-color {
+  background-color: var(--messenger-color);
+  color: var(--messenger-color-dark);
+}
+
+.messenger-color g {
+  fill: var(--messenger-color-dark);
+}
+
+.button img,
+.button svg {
+  width: 21px;
+  height: 21px;
+}

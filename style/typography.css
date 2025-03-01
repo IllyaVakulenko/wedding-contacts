@@ -1,0 +1,49 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Montserrat Alternates", cursive;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h1 .resize-image {
+  width: 42px;
+  aspect-ratio: 1;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h1 .resize-image {
+    width: 32px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media (max-width: 500px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 500px) {
+  h4 {
+    font-size: 16px;
+  }
+}

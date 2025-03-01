@@ -1,0 +1,89 @@
+@import "color.css";
+@import "reset.css";
+@import "typography.css";
+@import "button.css";
+
+
+.text-image {
+  display: inline;
+}
+
+.text-image > * {
+  margin-right: 8px;
+}
+
+.move-y {
+  transform: translateY(var(--move));
+}
+
+@media (max-width: 500px) {
+  .move-y {
+    transform: translateY(var(--move-mobile));
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  padding: 48px;
+  max-width: 460px;
+
+  background-color: white;
+
+  border-radius: 32px;
+  box-shadow: 0 0 128px 32px var(--primary-3);
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  height: auto;
+}
+
+.number {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.number .buttons {
+  flex-direction: row;
+}
+
+
+@media (max-width: 624px) {
+  .wrapper {
+    border-radius: 24px;
+    padding: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .number .buttons {
+    flex-direction: column;
+  }
+}
