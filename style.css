@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -10,18 +9,24 @@ body {
   justify-content: center;
   height: 100vh;
   padding: 16px;
+  margin: 32px 0;
 
+  font-family: "Nunito", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  /*font-family: "Shantell Sans", cursive;*/
+  /*font-weight: 400;*/
+}
+
+h2 {
   font-family: "Shantell Sans", cursive;
   font-weight: 400;
 }
 
-h1,h2,h3,h4,h5,h6 {
-
+h3 {
+  font-weight: 400;
 }
-
-/*h4 {*/
-/*	font-weight: 600;*/
-/*}*/
 
 .wrapper {
   display: flex;
@@ -29,7 +34,7 @@ h1,h2,h3,h4,h5,h6 {
   gap: 32px;
 
   padding: 48px;
-  width: 500px;
+  max-width: 500px;
 
   background-color: white;
 
@@ -54,24 +59,51 @@ h1,h2,h3,h4,h5,h6 {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 8px;
   min-height: 100%;
 }
 
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.social {
+  display: flex;
+}
+
 a {
-  text-decoration: none;
+  display: flex;
+  gap: 8px;
+
   width: fit-content;
   padding: 16px;
   border-radius: 16px;
   background-color: rgba(239, 248, 208, 0.8);
   color: #57770c;
   font-weight: 500;
+  text-decoration: none;
+}
+
+a img {
+  width: 21px;
 }
 
 @media (max-width: 624px) {
   .wrapper {
     border-radius: 24px;
     padding: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .numbers {
+    flex-direction: column;
+  }
+
+  a {
+    width: auto;
   }
 }
