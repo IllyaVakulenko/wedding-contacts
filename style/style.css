@@ -16,6 +16,10 @@
   transform: translateY(var(--move));
 }
 
+.move-x {
+  transform: translateX(var(--moveX));
+}
+
 @media (max-width: 500px) {
   .move-y {
     transform: translateY(var(--move-mobile));
